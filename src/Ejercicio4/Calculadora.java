@@ -6,10 +6,10 @@ public class Calculadora {
     public static void sumar(Scanner sc){
         try{
             System.out.print("|> Ingrese el primer numero: ");
-            int n1 = sc.nextInt();
+            double n1 = sc.nextDouble();
 
             System.out.print("|> Ingrese el segundo numero: ");
-            int n2 = sc.nextInt();
+            double n2 = sc.nextDouble();
             
             System.out.println("\nEl resultado es: " + (n1 + n2));
         }
@@ -25,10 +25,10 @@ public class Calculadora {
     public static void restar(Scanner sc){
         try{
             System.out.print("|> Ingrese el primer numero: ");
-            int n1 = sc.nextInt();
+            Double n1 = sc.nextDouble();
 
             System.out.print("|> Ingrese el segundo numero: ");
-            int n2 = sc.nextInt();
+            Double n2 = sc.nextDouble();
             
             System.out.println("\nEl resultado es: " + (n1 - n2));
         }
@@ -44,10 +44,10 @@ public class Calculadora {
     public static void multiplicar(Scanner sc){
         try{
             System.out.print("|> Ingrese el primer numero: ");
-            int n1 = sc.nextInt();
+            Double n1 = sc.nextDouble();
 
             System.out.print("|> Ingrese el segundo numero: ");
-            int n2 = sc.nextInt();
+            Double n2 = sc.nextDouble();
 
             System.out.println("\nEl resultado es: " + (n1 * n2));
         }
@@ -63,15 +63,15 @@ public class Calculadora {
     public static void dividir(Scanner sc){
         try{
             System.out.print("|> Ingrese el primer numero: ");
-            int n1 = sc.nextInt();
+            Double n1 = sc.nextDouble();
 
             System.out.print("|> Ingrese el segundo numero: ");
-            int n2 = sc.nextInt();
+            Double n2 = sc.nextDouble();
 
             if(n2 == 0){
                 throw new ArithmeticException();
             }
-            System.out.println("\nEl resultado es: " + ((double)n1 / n2));
+            System.out.println("\nEl resultado es: " + (n1 / n2));
         }
         catch(ArithmeticException e){
             System.out.println("\nError: No se puede dividir entre cero.");
