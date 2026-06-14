@@ -1,0 +1,3 @@
+Estudiar Java
+Hacer tarea de hilos
+Leer capitulo 13
