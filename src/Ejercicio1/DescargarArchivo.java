@@ -29,6 +29,6 @@ public class DescargarArchivo extends Thread {
                 System.out.println(getName() + " " + progreso + "%" );
             }
         }
-        System.out.println(getName() + " completado");
+        System.out.println(getName() + " completado.");
     }
 }
